@@ -3,16 +3,14 @@ import { BlogPosts } from 'app/components/posts'
 export default function Page() {
   return (
     <section>
+      <h1 className="mb-8 text-5xl font-semibold tracking-tighter">Hi!</h1>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        My name is Lucas Sun!
       </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+      <p className="mb-4 ">
+        {`I'm a computer engineering student at University of Waterloo. I do full stack development, firmware at school rocketry team, and working on building a interpreter/compiler in Go! Also checkout my photography work `}<a className="mb-4 text-black-500 underline" href='https://www.instagram.com/punchdii/'>here</a>
       </p>
+
       <div className="my-8">
         <BlogPosts />
       </div>
