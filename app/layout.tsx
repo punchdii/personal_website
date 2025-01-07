@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     default: 'Next.js Portfolio Starter',
     template: '%s | Next.js Portfolio Starter',
   },
-  description: 'This is my portfolio.',
+  description: 'This is Lucas s portfolio.',
   openGraph: {
-    title: 'My Portfolio',
+    title: 'Lucas Sun Portfolio',
     description: 'This is my portfolio.',
     url: baseUrl,
     siteName: 'My Portfolio',
