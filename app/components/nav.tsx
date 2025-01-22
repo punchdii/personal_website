@@ -1,14 +1,23 @@
 import Link from 'next/link'
 
+
+//navItems is a object
 const navItems = {
-  '/': {
+  '/': {   // '/' is the key, 
     name: 'Home',
   },
   '/blog': {
     name: 'Blog',
   },
+  '/portfolio':{
+    name: 'Portfolio'
+  },
+  '/connect':{
+    name: 'Connect'
+  }
+} 
 
-}
+
 
 export function Navbar() {
   return (
@@ -19,15 +28,16 @@ export function Navbar() {
           id="nav"
         >
           <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name }]) => {
+            {Object.entries(navItems).map(([path, { name }]) => {//convert navItems to list of objects, and .map execute the "convert to link" fufnciton 
+            //for each one of the item in the list. 
               return (
                 <Link
-                  key={path}
-                  href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  key={path}    //attibute
+                  href={path}   //relative url
+                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1" 
                 >
-                  {name}
-                </Link>
+                  {name} 
+                </Link>  //name which was passed in as an argument
               )
             })}
           </div>

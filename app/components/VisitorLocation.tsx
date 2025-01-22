@@ -35,10 +35,8 @@ export function VisitorLocation() {
     if (!location || location.error) return null;
 
     return (
-
-
         <p className="text-sm text-gray-600">
-            {`Hello! to who ever is visiting from  ${location.city}!`}
+            {`Hello! To who ever is visiting from  ${location.city}!`}
         </p>
     );
 }
