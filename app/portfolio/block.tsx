@@ -6,7 +6,7 @@ export default function PortfolioItem({ imageSrc, title, description }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="portfolio-item flex flex-col items-start bg-white rounded-lg shadow-md p-4">
+    <div className="portfolio-item dark:bg-neutral-900 dark:text-white  text-black flex flex-col items-start bg-white rounded-lg shadow-md p-4">
       <img src={imageSrc} alt={title} className="w-full h-auto rounded-lg" />
       <h2 className="text-xl h-auto font-bold mt-4">{title}</h2>
 
